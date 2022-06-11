@@ -13,12 +13,12 @@
 
 A simple way to check if your binary is built with GO and also the version of it is to use this command `strings binary | grep 'go1\.'`
 
-For me I got something this `
+For me I got this `
         stack=[beEfFgGvcgocheckgo1.13.8infinityno anodereadlinkrunnableruntime.scavengestrconv.unknown( (forced) -> node= blocked= defersc= in use)
 `
 So from this we've enumerated that this is a GO binary and it's version is `1.13.8`.
 
-> Since this is RE, let's open this in IDA/your favourite disassembler. I am using IDA Pro 7.7 as it has some IDAPython scripts that can make your life a bit easier.
+> Since this is RE, let's open this in IDA/your favourite disassembler. I am using IDA Pro 7.7 as it has some IDAPython scripts that can make your life a bit easier: [AlphaGolang](https://github.com/SentineLabs/ AlphaGolang), [IDAGolangHelper](https://github.com/sibears/IDAGolangHelper) 
 
 ``` C
 // main.main
