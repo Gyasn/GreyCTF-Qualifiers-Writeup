@@ -62,11 +62,9 @@ void __cdecl main_main()
 
 > Most people should not have much experience reversing GO binaries (like myself) - but you can read up a bit by reading [this](https://medium.com/@nishanmaharjan17/reversing-golang-binaries-part-1-c273b2ca5333) (I chose this because I am using IDA)
 
-> From that article we can tell a few things
-> 1. GO has many helper functions and compiler added code, these functions start with fmt and runtime respectively.
-> 2. You're mainly interested in functions that start with `main`
+> From that article we can tell that GO has many helper functions and compiler added code, these functions start with fmt and runtime respectively. 
 
-So from the tips earlier, we can gather that the binary has 2 main functions, `main_main` and `main_Encode`. We also know from the disassembly that the file calls `main_Encode()` on the user input and then prints the result of the function using `fmt_Fprintln()`
+From the functions defined in IDA, we can gather that the binary has 2 main functions, `main_main` and `main_Encode`. We also know from the disassembly that the file calls `main_Encode()` on the user input and then prints the result of the function using `fmt_Fprintln()`
 
 > From here we can do 2 things, either take a deep dive into the `main_Encode` function or we can explore challenge.txt
 
