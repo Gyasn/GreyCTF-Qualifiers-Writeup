@@ -225,7 +225,7 @@ We can do some extrapolation and see the similarities between the decompilation 
 Taking a closer look at the last else block from the article, we can see that this is the code responsible for doing the padding. Taking a similar snippet from the decompilation, we can see that it is assigning 45 to the string array. Using python or looking up an ascii table, we can see that the value 45 maps to the character '-'.
 
 ``` c
-    *(_BYTE *)(v6 + a1 + 2) = 45;
+*(_BYTE *)(v6 + a1 + 2) = 45;
 ```
 
 Now with some pretty strong proof that this block of code is base 64 encode with the custom substitution box at the start of the decompilation, while also taking note of the loop at the top. We can come up with a hypothesis that the binary is performing custom base64 encoding on the user's input, $X$ number of times. Then we can test this by implementing a base 64 decode and then brute forcing the number of times the loop runs.
