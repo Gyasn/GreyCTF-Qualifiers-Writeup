@@ -222,7 +222,7 @@ for (i=0, j=0; i<len; i+=3, j+=4) {
 
 We can do some extrapolation and see the similarities between the decompilation and this code snippet from the article.
 
-Taking a closer look at the last else block from the article, we can see that this is the code responsible for doing the padding. Taking a similar snippet from the decompilation, we can see that it is assigning 45 to the string array. Using python or looking up an ascii table, we can see that the value 45 maps to the character '-'.
+Taking a closer look at the last else block from the article, we can see that this is the code responsible for doing the padding. Taking a similar snippet from the decompilation, we can see that it is assigning 45 to the string array. Using python or looking up an ascii table, we can see that the value 45 maps to the character '-'. The same character that shows up at the end of challenge.txt
 
 ``` c
 *(_BYTE *)(v6 + a1 + 2) = 45;
