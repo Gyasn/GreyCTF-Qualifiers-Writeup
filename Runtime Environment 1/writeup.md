@@ -193,7 +193,7 @@ __int64 __usercall main_Encode@<rax>(__int64 a1, unsigned __int64 a2, __int64 a3
 }
 ``` 
 
-After going through the disassembly briefly, we observe that the string at the top is of length 64, and there is some bit shifting to the right by 63. Supporting our initial hunch that this could be some sort of custom base 64 encoding.
+After going through the disassembly briefly, we observe that the string at the top is of length 64 and there is some bit shifting to the right by 63. Supporting our initial hunch that this could be some sort of custom base 64 encoding.
 
 We can try to figure out if this is base64 or at least has some semblance to base64 and after some digging, I found this [article](https://nachtimwald.com/2017/11/18/base64-encode-and-decode-in-c/). 
 
