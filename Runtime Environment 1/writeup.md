@@ -61,6 +61,7 @@ void __cdecl main_main()
 <insert screenshot of imports>
 
 > Most people should not have much experience reversing GO binaries (like myself) - but you can read up a bit by reading [this](https://medium.com/@nishanmaharjan17/reversing-golang-binaries-part-1-c273b2ca5333) (I chose this because I am using IDA)
+
 > From that article we can tell a few things
 > 1. GO has many helper functions and compiler added code, these functions start with fmt and runtime respectively.
 > 2. You're mainly interested in functions that start with `main`
