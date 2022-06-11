@@ -85,7 +85,7 @@ while ( (__int64)v5 < 3 * ((__int64)a5 / 3) )
 {
     if ( v5 >= a5 )
 ``` 
-> A for loop ... ?
+> A while loop ... ?
 
 ``` C
 *(_BYTE *)(a1 + v6) = *((_BYTE *)v21 + ((v7 >> 18) & 0x3F)); // note that 0x3F == 63 
