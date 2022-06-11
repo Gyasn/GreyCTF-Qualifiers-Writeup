@@ -18,7 +18,7 @@ For me I got this `
 `
 So from this we've enumerated that this is a GO binary and it's version is `1.13.8`.
 
-> Since this is RE, let's open this in IDA/your favourite disassembler. I am using IDA Pro 7.7 as it has some IDAPython scripts that can make your life a bit easier: [AlphaGolang](https://github.com/SentineLabs/ AlphaGolang), [IDAGolangHelper](https://github.com/sibears/IDAGolangHelper) 
+> Since this is RE, let's open this in IDA/your favourite disassembler. I am using IDA Pro 7.7 as it has some IDAPython scripts that can make your life a bit easier: [AlphaGolang](https://github.com/SentineLabsAlphaGolang), [IDAGolangHelper](https://github.com/sibears/IDAGolangHelper) 
 
 ``` C
 // main.main
