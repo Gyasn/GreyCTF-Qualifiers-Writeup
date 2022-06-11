@@ -70,9 +70,9 @@ From the functions defined in IDA, we can gather that the binary has 2 main func
 
 I chose to do the latter and explore challenge.txt which looks like `GvVf+fHWz1tlOkHXUk3kz3bqh4UcFFwgDJmUDWxdDTTGzklgIJ+fXfHUh739+BUEbrmMzGoQOyDIFIz4GvTw+j--`
 
-Hmm, seems a bit suspicious with the `--`, anybody familiar with base64 encoding would immediately raise some suspicion that this could be some custom base64 maybe(?)
+> Hmm, seems a bit suspicious with the `--`, anybody familiar with base64 encoding would immediately raise some suspicion that this could be some custom base64 maybe(?)
 
-> Now we'll try to explore the `main_Encode` function
+Now we'll try to explore the `main_Encode` function
 
 ##### Interesting code snippets
 ``` C
