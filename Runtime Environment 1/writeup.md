@@ -72,7 +72,7 @@ I chose to do the latter and explore challenge.txt which looks like `GvVf+fHWz1t
 
 Hmm, seems a bit suspicious with the `--`, anybody familiar with base64 encoding would immediately raise some suspicion that this could be some custom base64 maybe(?)
 
-> Now we'll explore the other route, trying to explore the `main_Encode` function
+> Now we'll try to explore the `main_Encode` function
 
 ##### Interesting code snippets
 ``` C
