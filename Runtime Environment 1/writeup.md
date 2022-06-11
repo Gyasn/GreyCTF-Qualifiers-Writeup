@@ -78,20 +78,20 @@ Hmm, seems a bit suspicious with the `--`, anybody familiar with base64 encoding
 ``` C
 qmemcpy(v21, "NaRvJT1B/m6AOXL9VDFIbUGkC+sSnzh5jxQ273d4lHPg0wcEpYqruWyfZoM8itKe", sizeof(v21));
 ```
-An interesting string of length 64... 
+> An interesting string of length 64... 
 
-##### Full decompilation from IDA Pro 7.7
 ``` C
 while ( (__int64)v5 < 3 * ((__int64)a5 / 3) )
 {
     if ( v5 >= a5 )
 ``` 
-A for loop ... ?
+> A for loop ... ?
 
 ``` C
 *(_BYTE *)(a1 + v6) = *((_BYTE *)v21 + ((v7 >> 18) & 0x3F)); // note that 0x3F == 63 
 ```
-
+> bit shifting
+##### Full decompilation from IDA Pro 7.7
 ``` C
 // main.Encode
 __int64 __usercall main_Encode@<rax>(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4, unsigned __int64 a5)
@@ -191,11 +191,11 @@ __int64 __usercall main_Encode@<rax>(__int64 a1, unsigned __int64 a2, __int64 a3
   }
   return a3;
 }
-```
+``` 
 
-> This disassembly is quite complex... luckily we still have not exhausted all our explorable paths
+After going through the disassembly briefly, we observe that the string at the top is of length 64, and there is some bit shifting to the right by 63. Supporting our initial hunch that this could be some sort of custom base 64 encoding.
 
-Let's figure out if this is base64 or at least has some semblance to base64. After some digging, I found this [article](https://nachtimwald.com/2017/11/18/base64-encode-and-decode-in-c/). 
+We can try to figure out if this is base64 or at least has some semblance to base64 and after some digging, I found this [article](https://nachtimwald.com/2017/11/18/base64-encode-and-decode-in-c/). 
 
 
 ``` c
