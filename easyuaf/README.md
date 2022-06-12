@@ -1,10 +1,10 @@
-# Shero
+# easyuaf
 
 ## Solution 
 
 1. Allocate space for `org`.
 2. "delete" it.
-3. Allocate space for `person`. Personal_num = 4199030, business_num = 0.
+3. Allocate space for `person`. `Personal_num = 4199030`, `business_num` = 0.
 4. Print a namecard with the corresponding `org` and `person`.
 
 Run:
