@@ -9,7 +9,7 @@
 
 Luckily, you have unpacked the authentication firmware during previous reconaissance. Can you use them to override the decontamination process? |
 
-### methodology
+### Methodology
 We're given the challenge zip that contains 100 binaries and a service that we can connect to. In the description, we are also hinted that we may need to use [Angr](https://angr.io/) (this will prove useful later) 
 
 #### exploring the service 
