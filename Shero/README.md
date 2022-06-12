@@ -76,7 +76,7 @@ Would a naive `cat flag.txt` work? Probably not, but worth a try.
 
 There are probably insufficient permissions for the web service process to print the flag directly. The `readflag` file seems to suggest that as well. `cat readflag` and examine its contents.
 
-![cat readflag photo](CatReadFlag.png)
+![cat readflag photo](CatReadflag.png)
 
 `readflag` seems to be an ELF executable (judging from the start of its contents). Using burpsuite, send the exact same `GET` request to dump out the executable file. Then, disassemble the file.
 
