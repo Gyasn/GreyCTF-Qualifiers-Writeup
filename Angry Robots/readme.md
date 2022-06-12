@@ -5,9 +5,7 @@
 | Category             | Reverse Engineering              |
 | MD5 (authentication.tar.gz)  | 965b5a18735af4bbfa81879e2cedc9cc |
 | Solves               | 18                               |
-| Description          | You have entered a top secret robot production facilities and your clumsy friend tripped the alarm. You and your friends are about to be "decontaminated".
-
-Luckily, you have unpacked the authentication firmware during previous reconaissance. Can you use them to override the decontamination process? |
+| Description          | You have entered a top secret robot production facilities and your clumsy friend tripped the alarm. You and your friends are about to be "decontaminated". Luckily, you have unpacked the authentication firmware during previous reconaissance. Can you use them to override the decontamination process? |
 
 ### Methodology
 We're given the challenge zip that contains 100 binaries and a service that we can connect to. In the description, we are also hinted that we may need to use [Angr](https://angr.io/) (this will prove useful later) 
