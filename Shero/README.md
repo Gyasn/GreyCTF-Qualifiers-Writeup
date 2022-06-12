@@ -14,6 +14,8 @@ Since the initial `cat` is provided, only the pipe character onward needs to be 
 
 ## Thought process
 
+Note: Screenshots in Kali are run with a `bash` shell. Kali uses `zsh` by default.
+
 On visiting the webpage, the webpage shows the following:
 
 ```php
