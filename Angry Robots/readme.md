@@ -316,8 +316,3 @@ if (len(SM.found) > 0):
 5. Run Angr on your binary with the appropriate options changed
 6. Repeat steps 4 to 5 til the service gives you the flag
 7. Get flag
-
-
-
-
-
