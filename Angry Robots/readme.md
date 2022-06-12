@@ -103,7 +103,7 @@ __int64 __fastcall sub_401176(char a1, int a2)
 
 #### Analyzing 1b2b71acb4caaa86f9b6d108537adc205997d23084f17a0741643eb216cfa264
 
-Analyzing the `1b2b71acb4caaa86f9b6d108537adc205997d23084f17a0741643eb216cfa264` manually, we can see similarities between the binaries, they do the above checks again except with a few differences. The rest of the code is the same. 
+Analyzing `1b2b71acb4caaa86f9b6d108537adc205997d23084f17a0741643eb216cfa264` manually, we can see similarities between the binaries, they do the above checks again except with a few differences. The rest of the code is the same. 
 
 1. The input str length (in this case it's 30)
 2. The custom char set
