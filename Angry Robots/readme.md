@@ -191,7 +191,7 @@ Now with a bit more understanding, let me try to explain how Angr works.
 Simply put, `BVS` is an unknown whereby you can specify some constraints on, such as input size or characters matched. `Find` is the memory address or path you want the symbolic executor to take. `Avoid` is the memory address or path you want the symbolic executor to avoid. 
 
 
-##### general framework for identifying memory addresses for `find` and `avoid` 
+##### General framework for identifying memory addresses for `find` and `avoid` 
 
 We can use angr more effectively by employing this mini framework that I've created through this challenge
 
@@ -201,7 +201,7 @@ We can use angr more effectively by employing this mini framework that I've crea
 4. Find the other branch that the code will take in the event you don't run the success branch, this will be your avoid memory address
 5. Your find address can be any line of code that runs after the success branch 
 
-##### running Angr on this binary 
+##### Running Angr on this binary 
 
 1. Identify success condition 
 > We want the program to return 0
@@ -262,7 +262,7 @@ Running this with `python ./sol.py 1a0ac4eb514b129844e15c2fad569f523c5701e146fff
 
 > Being lazy I thought I could just run the same code on all binaries but this didn't work out obviously from our previous testing
 
-##### allowing Angr to work on all binaries 
+##### Allowing Angr to work on all binaries 
 So we need to generalize Angr to run on all these binaries using some complex algorithm ... No. Let's return to monke. I decided to get the offsets manually for each binary that the service requests for. 
 
 Knowing I needed to do this within the time limit, I tried to speed up Angr by reading their [docs](https://docs.angr.io/advanced-topics/speed) and found two low effort settings that I could enable immediately and ran the script on my host instead of a VM to squeeze all the computing power I could get. Unsurprisingly, this allowed me to answer all 5 passwords and get the flag. 
