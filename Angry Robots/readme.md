@@ -10,7 +10,7 @@
 ### Methodology
 We're given the challenge zip that contains 100 binaries and a service that we can connect to. In the description, we are also hinted that we may need to use [Angr](https://angr.io/) (this will prove useful later) 
 
-#### exploring the service 
+#### Exploring the service 
 > Since I don't feel like analysing 100 binaries right now, let's take a look at the service 
 
 The service gives us this output :
@@ -190,7 +190,7 @@ Now with a bit more understanding, let me try to explain how Angr works.
 Simply put, `BVS` is an unknown whereby you can specify some constraints on, such as input size or characters matched. `Find` is the memory address or path you want the symbolic executor to take. `Avoid` is the memory address or path you want the symbolic executor to avoid. 
 
 
-##### general framework for identifying memory addresses for find and avoid 
+##### general framework for identifying memory addresses for `find` and `avoid` 
 
 We can use angr more effectively by employing this mini framework that I've created through this challenge
 
