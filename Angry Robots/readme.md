@@ -150,7 +150,7 @@ From these 2 binaries, we can come up with a hypothesis that the binaries take i
 
 #### Exploring Angr
 
-> For this section, we'll be referencing 1a0ac4eb514b129844e15c2fad569f523c5701e146fffa3d51d6e5868b304da3 
+> For this section, we'll be referencing `1a0ac4eb514b129844e15c2fad569f523c5701e146fffa3d51d6e5868b304da3`
 
 It seemed apt to use Angr as we have 100 binaries to analyse and the name of the challenge also suggests to us to use it. 
 
@@ -163,6 +163,7 @@ Referencing [John Hammond's video](https://www.youtube.com/watch?v=RCgEIBfnTEI) 
 Angr allows you to define your input as an unknown, while specifying the size of it and allowing you to add constraints in order for the symbolic executor to not implode on itself.
 
 ```python
+# boilerplate code
 import angr
 import claripy
 
