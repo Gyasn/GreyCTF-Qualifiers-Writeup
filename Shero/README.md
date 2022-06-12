@@ -4,7 +4,7 @@
 
 The goal is to send this to the server:
 
-```
+```bash
 cat | readflag sRPd45w_0
 ```
 
@@ -92,7 +92,7 @@ An accidental discovery was made with `$[]` while experimenting with the bash te
 
 With that in mind, `cut` was the first program of choice. It supports a flag specified with `-c`, allowing users to extract specific offsets of characters. However, it did not work for binary data as it often gave inconsistent results. `cut` also works on offsets relative to the start of each new line, which was not what was needed.
 
-![readflag cut photo](ReadFlagCut.png)
+![readflag cut photo](ReadflagCut.png)
 
 It should be noted that `cut` can still generate letters, just not consistently when it comes to binary data. In this case, it does not sufficiently work.
 
