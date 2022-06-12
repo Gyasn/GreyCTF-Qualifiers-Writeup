@@ -24,8 +24,6 @@ Decontamination in 10 minutes
 Do you wish to override? (y/n)
 y
 Password required for challenge code: a3f10dcecdf143a491de186e964bd2a3646c35c7fee694ae1feea4f238c13ec6
-
-
 ```
 From this we can guess a few things, the binaries will output some sort of input (or not...) for this service and that we have a time limit of 10 minutes because of (Decontamination in 10 minutes) 
 
